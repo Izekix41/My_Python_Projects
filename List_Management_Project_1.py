@@ -15,10 +15,15 @@ while program:
             print(f"Your list {Your_List}")
             if selection == "0":
                 add_input = input("Enter your list: ")
-                Your_List.append(add_input)
+                add_input_clean = add_input.strip().lower()
+                Your_List.append(add_input_clean)
             elif selection == "1":
                 select = input("Select word to remove: ")
-                Your_List.remove(select)
+                select_clean = select.strip().lower()
+                if select_clean in Your_list:
+                    Your_List.remove(select)
+                else:
+                    print(f"Could not find the word\"{select_clean}\"")
             elif selection == "2":
                 print(" ")
                 print(" ")
