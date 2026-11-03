@@ -1,6 +1,6 @@
+Your_List = []
 program = True
 while program:
-    Your_List = []
     Intro = input("Start Program?: (yes/no)")
     Intro_clean = Intro.strip().lower()
     if Intro_clean == "yes":
