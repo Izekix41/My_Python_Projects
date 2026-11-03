@@ -21,7 +21,7 @@ while program:
                 select = input("Select word to remove: ")
                 select_clean = select.strip().lower()
                 if select_clean in Your_list:
-                    Your_List.remove(select)
+                    Your_List.remove(select_clean)
                 else:
                     print(f"Could not find the word\"{select_clean}\"")
             elif selection == "2":
